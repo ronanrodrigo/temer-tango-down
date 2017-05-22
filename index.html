@@ -63,17 +63,12 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $.ajax({
-            url: "https://raw.githubusercontent.com/ronanrodrigo/temer-tango-down/master/is-down.json",
-            type: "GET",
-            dataType: "json",
-            success: function(data) {
-                console.log(data.down)
-                if (data.down) {
-                    $(".yes").removeClass("hidden")
-                } else {
-                    $(".not").removeClass("hidden")
-                }
+        $.getJSON("is-down.json", function(data) {
+            console.log(data)
+            if (data.down) {
+                $(".yes").removeClass("hidden")
+            } else {
+                $(".not").removeClass("hidden")
             }
         })
     })
