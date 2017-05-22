@@ -63,9 +63,8 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $.getJSON("is-down.json", function(data) {
-            console.log(data)
-            if (data.down) {
+        $.getJSON("is-down.json", function(tango) {
+            if (tango.down) {
                 $(".yes").removeClass("hidden")
             } else {
                 $(".not").removeClass("hidden")
