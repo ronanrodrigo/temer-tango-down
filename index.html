@@ -8,6 +8,8 @@
         * {
             margin: 0;
             padding: 0;
+            font-family: sans-serif;
+            text-align: center;
         }
         .not, .yes, body, html {
             width: 100% !important;
@@ -15,20 +17,17 @@
         }
         .not {
             background-color: #ef5350;
+            color: #7f0000;
         }
         .yes {
             background-color: #4caf50;
+            color: #1b5e20;
+        }
+        h2 {
+            font-size: 30px;
         }
         h1 {
-            font-family: sans-serif;
             font-size: 100px;
-            text-align: center;
-        }
-        .not h1 {
-            color: #7f0000;
-        }
-        .yes h1 {
-            color: #1b5e20;
         }
         .container {
             position: absolute;
@@ -46,12 +45,14 @@
 
     <div class="not hidden">
         <div class="container">
+            <h2>O Termer já caiu?<h2>
             <h1>Não 🙁</h1>
         </div>
     </div>
 
     <div class="yes hidden">
         <div class="container">
+            <h2>O Termer já caiu?<h2>
             <h1>Sim 😃</h1>
         </div>
     </div>
